@@ -14,11 +14,11 @@ class SFTP {
 	 * @throws Exception
 	 */
 	public function setup_connection(): string {
-		$server    = STE_HOST;
-		$username  = STE_USERNAME;
-		$password  = STE_PASSWORD;
-		$directory = STE_DIR;
-		$filename  = STE_FILE;
+		$server    = get_map_setting( 'sftp_host' );
+		$username  = get_map_setting( 'sftp_username' );
+		$password  = get_map_setting( 'sftp_password' );
+		$directory = get_map_setting( 'ftp_directory' );
+		$filename  = get_map_setting( 'ftp_filename' );
 
 		$file = '';
 

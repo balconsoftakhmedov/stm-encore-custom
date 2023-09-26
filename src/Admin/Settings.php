@@ -60,6 +60,53 @@ class Settings {
 							'value'   => 'sftp',
 						),
 
+						//sftp settings
+						'sftp_host'          => array(
+							'type'        => 'text',
+							'label'       => esc_html__( 'SFTP Host', 'stm-encore-custom' ),
+							'description' => esc_html__( 'Enter SFTP host', 'stm-encore-custom' ),
+							'dependency'  => array(
+								'key'   => 'type',
+								'value' => 'sftp',
+							),
+						),
+						'sftp_username'      => array(
+							'type'        => 'text',
+							'label'       => esc_html__( 'SFTP Username', 'stm-encore-custom' ),
+							'description' => esc_html__( 'Enter SFTP username', 'stm-encore-custom' ),
+							'dependency'  => array(
+								'key'   => 'type',
+								'value' => 'sftp',
+							),
+						),
+						'sftp_password'      => array(
+							'type'        => 'text',
+							'label'       => esc_html__( 'SFTP Password', 'stm-encore-custom' ),
+							'description' => esc_html__( 'Enter SFTP password', 'stm-encore-custom' ),
+							'dependency'  => array(
+								'key'   => 'type',
+								'value' => 'sftp',
+							),
+						),
+						'ftp_directory'      => array(
+							'type'        => 'text',
+							'label'       => esc_html__( 'File Directory', 'stm-encore-custom' ),
+							'description' => esc_html__( 'Enter file directory', 'stm-encore-custom' ),
+							'dependency'  => array(
+								'key'   => 'type',
+								'value' => 'sftp||ftp',
+							),
+						),
+						'ftp_filename'       => array(
+							'type'        => 'text',
+							'label'       => esc_html__( 'File Name', 'stm-encore-custom' ),
+							'description' => esc_html__( 'Enter file name', 'stm-encore-custom' ),
+							'dependency'  => array(
+								'key'   => 'type',
+								'value' => 'sftp||ftp',
+							),
+						),
+
 						//file settings
 						'field_separator'    => array(
 							'type'        => 'text',
@@ -174,6 +221,8 @@ class Settings {
 		if ( empty( $settings['schedule'] ) ) {
 			return;
 		}
+
+
 
 		foreach ( $settings['schedule'] as $schedule ) {
 			extract( $schedule );
