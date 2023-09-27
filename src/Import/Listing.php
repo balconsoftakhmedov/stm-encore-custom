@@ -123,6 +123,10 @@ class Listing {
 				$value = explode( self::$fields[ $meta ]['multiple_separator'], $value );
 			}
 
+			$special_marks = ['special_car', 'sale_pending_car'];
+			if ( in_array( $meta, $special_marks ) && $value == 1 ) {
+				$value = 'on';
+			}
 			update_post_meta( self::$post_id, $meta, $value );
 		}
 

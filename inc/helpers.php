@@ -41,6 +41,8 @@ function get_available_attributes(): array {
 		'city_mpg'            => esc_html__( 'City MPG', 'stm-encore-custom' ),
 		'highway_mpg'         => esc_html__( 'Highway MPG', 'stm-encore-custom' ),
 		'registration_date'   => esc_html__( 'Registration Date', 'stm-encore-custom' ),
+		'special_car'         => esc_html__('Special', 'stm-encore-custom'),
+		'sale_pending_car'    => esc_html__('Sale pending', 'stm-encore-custom'),
 	];
 
 	return apply_filters( 'stm_encore_custom_available_attributes', $available_attributes );
@@ -78,6 +80,7 @@ function get_listings_attributes( $placeholder = false ): array {
 	if ( $placeholder ) {
 		$collected_attributes = array_merge( [ '' => $placeholder ], $collected_attributes );
 	}
+
 
 	return apply_filters( 'stm_encore_custom_listings_attributes', $collected_attributes );
 }
