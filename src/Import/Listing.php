@@ -126,6 +126,8 @@ class Listing {
 			$special_marks = ['special_car', 'sale_pending_car'];
 			if ( in_array( $meta, $special_marks ) && $value == 1 ) {
 				$value = 'on';
+			}elseif (in_array( $meta, $special_marks ) ){
+				$value = '';
 			}
 			update_post_meta( self::$post_id, $meta, $value );
 		}
