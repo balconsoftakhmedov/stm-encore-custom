@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../../carwelt/wp-content/themes/motors/.idea/motors.iml" filepath="$PROJECT_DIR$/../../../../carwelt/wp-content/themes/motors/.idea/motors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../carwelt/wp-content/themes/motors-child/.idea/motors-child.iml" filepath="$PROJECT_DIR$/../../../../carwelt/wp-content/themes/motors-child/.idea/motors-child.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../carwelt/wp-content/plugins/motors-elementor-widgets/.idea/motors-elementor-widgets.iml" filepath="$PROJECT_DIR$/../../../../carwelt/wp-content/plugins/motors-elementor-widgets/.idea/motors-elementor-widgets.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/stm-encore-custom.iml" filepath="$PROJECT_DIR$/.idea/stm-encore-custom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../carwelt/wp-content/plugins/stm-motors-custom/.idea/stm-motors-custom.iml" filepath="$PROJECT_DIR$/../../../../carwelt/wp-content/plugins/stm-motors-custom/.idea/stm-motors-custom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../carwelt/wp-content/plugins/stm-motors-extends/.idea/stm-motors-extends.iml" filepath="$PROJECT_DIR$/../../../../carwelt/wp-content/plugins/stm-motors-extends/.idea/stm-motors-extends.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../carwelt/wp-content/plugins/stm_motors_review/.idea/stm_motors_review.iml" filepath="$PROJECT_DIR$/../../../../carwelt/wp-content/plugins/stm_motors_review/.idea/stm_motors_review.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../carwelt/wp-content/plugins/stm_vehicles_listing/.idea/stm_vehicles_listing.iml" filepath="$PROJECT_DIR$/../../../../carwelt/wp-content/plugins/stm_vehicles_listing/.idea/stm_vehicles_listing.iml" />
     </modules>
   </component>
 </project>
