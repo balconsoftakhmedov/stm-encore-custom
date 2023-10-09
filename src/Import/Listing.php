@@ -124,7 +124,7 @@ class Listing {
 			}
 
 			$special_marks = ['special_car', 'sale_pending_car'];
-			if ( in_array( $meta, $special_marks ) && $value == 1 ) {
+			if ( in_array( $meta, $special_marks ) && $value == 'TRUE' ) {
 				$value = 'on';
 			}elseif (in_array( $meta, $special_marks ) ){
 				$value = '';
